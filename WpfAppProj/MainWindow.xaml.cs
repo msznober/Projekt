@@ -20,9 +20,40 @@ namespace WpfAppProj
     /// </summary>
     public partial class MainWindow : Window
     {
+        wpfAppEntities _db = new wpfAppEntities();
+        public static DataGrid datagrid;
         public MainWindow()
         {
             InitializeComponent();
+            Load();
+        }
+
+        private void Load()
+        {
+            myDataGrid.ItemsSource = _db.members.ToList();
+            datagrid = myDataGrid;
+        }
+
+        private void insertBtn_Click(object sender, RoutedEventArgs e)
+        {
+            InsertPage Ipage = new InsertPage();
+            Ipage.ShowDialog();
+        }
+
+        private void updateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int Id = (myDataGrid.SelectedItem as member).id;
+            UpdatePage Upage = new UpdatePage(Id);
+            Upage.ShowDialog();
+        }
+
+        private void deleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int Id = (myDataGrid.SelectedItem as member).id;
+            var deleteMember = _db.members.Where(m => m.id == Id).Single();
+            _db.members.Remove(deleteMember);
+            _db.SaveChanges();
+            myDataGrid.ItemsSource = _db.members.ToList();
         }
     }
 }

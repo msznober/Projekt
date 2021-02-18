@@ -10,7 +10,7 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,21,0,0" TextWrapping="Wrap" Text="Dodaj osobę" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="45,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Text="Name"/></TextBlock>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="45,123,0,0" TextWrapping="Wrap" Text="Płeć" VerticalAlignment="Top" FontSize="14"/>
-        <Button x:Name="insertBtn" Content="Dodaj" HorizontalAlignment="Left" Margin="100,189,0,0" VerticalAlignment="Top" Width="75" FontSize="18"/>
+        <Button x:Name="insertBtn" Content="Dodaj" HorizontalAlignment="Left" Margin="100,189,0,0" VerticalAlignment="Top" Width="75" FontSize="18" Click="insertBtn_Click"/>
         <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="139,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="gendercomboBox" HorizontalAlignment="Left" Margin="139,123,0,0" VerticalAlignment="Top" Width="120">
             <ComboBox.Items>

@@ -19,9 +19,24 @@ namespace WpfAppProj
     /// </summary>
     public partial class InsertPage : Window
     {
+        wpfAppEntities _db = new wpfAppEntities();
         public InsertPage()
         {
             InitializeComponent();
+        }
+
+        private void insertBtn_Click(object sender, RoutedEventArgs e)
+        {
+            member newMember = new member()
+            {
+                name = nameTextBox.Text,
+                gender = gendercomboBox.Text
+            };
+
+            _db.members.Add(newMember);
+            _db.SaveChanges();
+            MainWindow.datagrid.ItemsSource = _db.members.ToList();
+            this.Hide();
         }
     }
 }

@@ -21,9 +21,9 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Button x:Name="insertBtn" Content="Dodaj"/>
-                                <Button x:Name="updateBtn" Content="Zaktualizuj"/>
-                                <Button x:Name="deleteBtn" Content="Usuń"/>
+                                <Button x:Name="insertBtn" Content="Dodaj" Click="insertBtn_Click"/>
+                                <Button x:Name="updateBtn" Content="Zaktualizuj" Click="updateBtn_Click"/>
+                                <Button x:Name="deleteBtn" Content="Usuń" Click="deleteBtn_Click"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
