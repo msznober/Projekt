@@ -1,0 +1,17 @@
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\bin\Debug\WpfAppProj.exe.config
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\bin\Debug\WpfAppProj.exe
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\bin\Debug\WpfAppProj.pdb
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.csprojAssemblyReference.cache
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\InsertPage.g.cs
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\MainWindow.g.cs
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\App.g.cs
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj_MarkupCompile.cache
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj_MarkupCompile.lref
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\InsertPage.baml
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\MainWindow.baml
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.g.resources
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.Properties.Resources.resources
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.csproj.GenerateResource.cache
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.csproj.CoreCompileInputs.cache
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.exe
+C:\Users\mszno\source\repos\WpfAppProj\WpfAppProj\obj\Debug\WpfAppProj.pdb
