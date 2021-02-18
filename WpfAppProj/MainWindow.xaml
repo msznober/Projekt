@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
     <DockPanel>
-        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False"/>
+        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding id}" />
+                <DataGridTextColumn Header="Imię i nazwisko" Binding="{Binding name}" />
+                <DataGridTextColumn Header="Płeć" Binding="{Binding gender}" />
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="Akcje"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="insertBtn" Content="Dodaj"/>
+                                <Button x:Name="updateBtn" Content="Zaktualizuj"/>
+                                <Button x:Name="deleteBtn" Content="Usuń"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </DockPanel>
 </Window>
