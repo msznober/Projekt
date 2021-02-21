@@ -5,30 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppProj"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="600">
+        Title="MainWindow" Height="600" Width="600" TextElement.FontSize="18">
     <DockPanel>
-        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False">
+        <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" HorizontalAlignment="Center">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding id}" />
-                <DataGridTextColumn Header="Imię i nazwisko" Binding="{Binding name}" />
-                <DataGridTextColumn Header="Płeć" Binding="{Binding gender}" />
-                <DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
+                    <DataGridTextColumn Header="Imię i nazwisko" Binding="{Binding name}" />
+                    <DataGridTextColumn Header="Płeć" Binding="{Binding gender}" />
+                    <DataGridTemplateColumn>
                     <DataGridTemplateColumn.HeaderTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="Akcje"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.HeaderTemplate>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button x:Name="insertBtn" Content="Dodaj" Click="insertBtn_Click"/>
-                                <Button x:Name="updateBtn" Content="Zaktualizuj" Click="updateBtn_Click"/>
-                                <Button x:Name="deleteBtn" Content="Usuń" Click="deleteBtn_Click"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
+                            <DataTemplate>
+                                <TextBlock Text="Akcje"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                <Button x:Name="insertBtn" Content="Dodaj" Click="insertBtn_Click" Background="#545d6a" Foreground="white" Width="100"/>
+                                <Button x:Name="updateBtn" Content="Zaktualizuj" Click="updateBtn_Click" Background="#545d6a" Foreground="white" Width="100"/>
+                                <Button x:Name="deleteBtn" Content="Usuń" Click="deleteBtn_Click" Background="#545d6a" Foreground="white" Width="100"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
         </DataGrid>
     </DockPanel>
 </Window>

@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppProj"
         mc:Ignorable="d"
-        Title="UpdatePage" Height="300" Width="300">
-    <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,21,0,0" TextWrapping="Wrap" Text="Zaktualizuj" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="28,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Text="Imię i nazwisko"/></TextBlock>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="45,123,0,0" TextWrapping="Wrap" Text="Płeć" VerticalAlignment="Top" FontSize="14"/>
-        <Button x:Name="updateBtn" Content="Zaktualizuj" HorizontalAlignment="Left" Margin="92,190,0,0" VerticalAlignment="Top" Width="109" FontSize="18" Click="updateBtn_Click"/>
-        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="139,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="gendercomboBox" HorizontalAlignment="Left" Margin="139,123,0,0" VerticalAlignment="Top" Width="120">
+        Title="UpdatePage" Height="400" Width="400" Background="#04c582">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+        <Grid Margin="20">
+         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Zaktualizuj użytkownika" VerticalAlignment="Top" FontSize="28" Foreground="white"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Center"  Margin="0 70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="white"><Run Text="Imię i nazwisko"/></TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" Text="Płeć" VerticalAlignment="Top" FontSize="18" Foreground="white"/>
+        <Button x:Name="updateBtn" Content="Zaktualizuj" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="130" FontSize="20" Click="updateBtn_Click" Background="#545d6a" Foreground="white"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Center" Height="23" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <ComboBox x:Name="gendercomboBox" HorizontalAlignment="Center" Margin="0,170, 0,0" VerticalAlignment="Top" Width="200">
             <ComboBox.Items>
                 <ComboBoxItem>Mężczyzna</ComboBoxItem>
                 <ComboBoxItem>Kobieta</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
     </Grid>
+        
+    </Border>
 </Window>
