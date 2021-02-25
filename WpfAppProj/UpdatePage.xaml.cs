@@ -27,6 +27,9 @@ namespace WpfAppProj
             Id = memberId;
         }
 
+    /// <summary>
+    /// Obsługa aktualizacji użytkowników w bazie
+    /// </summary>
         private void updateBtn_Click(object sender, RoutedEventArgs e)
         {
             member updateMember = (from m in _db.members

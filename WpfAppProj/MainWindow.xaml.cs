@@ -28,25 +28,35 @@ namespace WpfAppProj
             Load();
         }
 
+    /// <summary>
+    /// Wczytanie rekordów z bazy
+    /// </summary>
         private void Load()
         {
             myDataGrid.ItemsSource = _db.members.ToList();
             datagrid = myDataGrid;
         }
 
+    /// <summary>
+    /// Obsługa przycisku Dodania użytkownika
+    /// </summary>
         private void insertBtn_Click(object sender, RoutedEventArgs e)
         {
             InsertPage Ipage = new InsertPage();
             Ipage.ShowDialog();
         }
-
+    /// <summary>
+    /// Obsługa przycisku Aktualizacji użytkownika
+    /// </summary>
         private void updateBtn_Click(object sender, RoutedEventArgs e)
         {
             int Id = (myDataGrid.SelectedItem as member).id;
             UpdatePage Upage = new UpdatePage(Id);
             Upage.ShowDialog();
         }
-
+    /// <summary>
+    /// Obsługa przycisku Usunięcia użytkownika
+    /// </summary>
         private void deleteBtn_Click(object sender, RoutedEventArgs e)
         {
             int Id = (myDataGrid.SelectedItem as member).id;

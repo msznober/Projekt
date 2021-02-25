@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppProj"
         mc:Ignorable="d"
-        Title="UpdatePage" Height="400" Width="400" Background="#04c582">
+        Title="Zaktualizuj użytkownika" Height="400" Width="400" Background="#04c582">
     <Border Background="#2e3137" CornerRadius="20" Margin="20">
         <Grid Margin="20">
          <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Zaktualizuj użytkownika" VerticalAlignment="Top" FontSize="28" Foreground="white"/>

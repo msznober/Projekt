@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppProj"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="600" TextElement.FontSize="18">
+        Title="Zarządzaj użytkownikami" Height="600" Width="600" TextElement.FontSize="18">
     <DockPanel>
         <DataGrid x:Name="myDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" HorizontalAlignment="Center">
             <DataGrid.Columns>

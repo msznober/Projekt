@@ -24,7 +24,9 @@ namespace WpfAppProj
         {
             InitializeComponent();
         }
-
+    /// <summary>
+    /// Obsługa dodawania nowych użytkowników do bazy
+    /// </summary>
         private void insertBtn_Click(object sender, RoutedEventArgs e)
         {
             member newMember = new member()

@@ -24,6 +24,9 @@ namespace WpfAppProj
             InitializeComponent();
         }
 
+    /// <summary>
+    /// Wyświetlenie okna użytkowników
+    /// </summary>
         private void goBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
